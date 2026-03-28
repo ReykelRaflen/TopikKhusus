@@ -1,0 +1,23 @@
+{
+  "name": "notification_consumer_nodejs",
+  "version": "1.0.0",
+  "description": "Notification consumer in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo 'Use npm run start:email, start:fcm, or start:sms to run individual services'",
+    "start:email": "node cmd/email/main.js",
+    "start:fcm": "node cmd/fcm/main.js",
+    "start:sms": "node cmd/sms/main.js",
+    "start:all": "concurrently \"npm run start:email\" \"npm run start:fcm\" \"npm run start:sms\""
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

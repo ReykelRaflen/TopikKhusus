@@ -1,0 +1,18 @@
+{
+  "name": "notification_publisher_nodejs",
+  "version": "1.0.0",
+  "description": "Notification publisher in Node.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
